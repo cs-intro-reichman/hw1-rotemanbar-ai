@@ -7,7 +7,7 @@ public class Bill3 {
         double total = Double.parseDouble(args[3]);
 
         double payment = total / 3.0;
-        payment = Math.round(payment); // round to nearest integer
+        payment = Math.round(payment * 10.0) / 10.0; // round to one decimal place
 
         System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 +
                            ": pay " + String.format("%.1f", payment) + " Shekels each");
